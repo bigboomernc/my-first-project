@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>My First Project</title>
+  <style>
+    body { font-family: sans-serif; text-align: center; padding: 40px; background: #f4f4f8; }
+    button { font-size: 20px; padding: 10px 20px; cursor: pointer; }
+    #count { font-size: 48px; margin: 20px; }
+  </style>
+</head>
+<body>
+  <!-- HTML = the content on the page -->
+  <h1>Hello, I'm learning to code!</h1>
+  <p>Click the button to count up.</p>
+  <div id="count">0</div>
+  <button id="btn">Click me</button>
+
+  <script>
+    // JavaScript = makes the page do things
+    let count = 0;                                  // a variable holds a value
+    const display = document.getElementById("count");
+    const button = document.getElementById("btn");
+
+    button.addEventListener("click", function () {  // run this code on every click
+      count = count + 1;
+      display.textContent = count;
+    });
+
+    // TRY THIS: change the heading text above, or make the button count by 2.
+  </script>
+</body>
+</html>
